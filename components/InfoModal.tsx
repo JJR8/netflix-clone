@@ -6,12 +6,12 @@ import FavoriteButton from "./FavoriteButton";
 import useInfoModal from "@/hooks/useInfoModal";
 import useMovie from "@/hooks/useMovie";
 
-interface infoModalProps {
+interface InfoModalProps {
     visible?: boolean;
     onClose: any;
 }
 
-const InfoModal: React.FC<infoModalProps> = ({ visible, onClose }) => {
+const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
     const [isVisible, setIsVisible] = useState<boolean>(!!visible);
 
     const { movieId } = useInfoModal();
